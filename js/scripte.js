@@ -29,15 +29,5 @@ $(document).ready(function () {
         corausel_h();
     });
     
-    $(".catagories div div div").hover(function () {
-        $(this).children("h5").css("opacity", 1);
-        $(this).children("button").css("display", "block");
-        $(this).children("button").animate({
-            top : "60%"
-        }, 1000);
-    }, function () {
-        $(this).children("h5").css("opacity", 0.5);
-        $(this).children("button").css("display", "none");        
-    });
     
 });
