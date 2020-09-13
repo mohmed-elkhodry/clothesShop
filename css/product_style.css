@@ -1,0 +1,27 @@
+body{
+    height: 5000px;
+}
+footer{
+    margin-top: 1000px;
+}
+.controllers{
+    display: block;
+    margin: auto;
+    margin: 20px;
+    text-align: center;
+}
+
+.controllers button{
+    margin: 0px 15px; 
+}
+.controllers button:focus , :hover{
+    outline: none !important;
+}
+
+.mixitup-control-active{
+    padding: 8px 40px !important;
+    background-color: transparent !important;
+    color: #E53935 !important;
+    border: 2px solid #E53935 !important;
+    outline: none !omportant;
+}

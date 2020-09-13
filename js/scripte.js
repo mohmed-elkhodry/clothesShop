@@ -29,5 +29,34 @@ $(document).ready(function () {
         corausel_h();
     });
     
+    $(document).on("scroll", function () {
+        if ($(this).scrollTop() > 500) {
+            $(".top-btn").fadeIn(500);
+        } else {
+            $(".top-btn").fadeOut(500);
+        }
+    });
+    
+     $(".top-btn").click(function () {
+        $("html, body").animate({
+            scrollTop : 0
+        }, 1000);
+    });
+    
+    if ($(window).width() >= 576 || !(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))) {
+        $(".fa-search").click(function () {
+            $(".serch-bar").show();
+            $(".serch-bar").animate({
+                width : "210px"
+            }, 1000);
+            $(".serch-bar").focus();    
+        });
+    
+        $(".serch-bar").blur(function () {
+            $(".serch-bar").css("width", "0px");
+            $(".serch-bar").hide();
+        });
+     
+    }
     
 });

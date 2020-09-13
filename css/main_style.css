@@ -38,6 +38,29 @@ button:active, button:focus {
     color: #E53935;
     border: 2px solid #E53935;
 }
+
+.top-btn{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #E53935;
+    border-radius: 50%;
+    border: none;
+    opacity: 0.5;
+    display: none;
+    z-index: 1000;
+}
+.top-btn i{
+    vertical-align: middle;
+    padding: 0px;
+    margin: 0px;
+}
+
+.top-btn:hover{
+    opacity: 1;
+}
 /* styling   nav      bar*/
 
 .navbar-nav li{
@@ -47,6 +70,32 @@ button:active, button:focus {
     
 }
 
+.serch-bar{
+    background-color: transparent;
+    color: aliceblue;
+    border: 2px solid #E53935;
+    border-radius: 15px;
+    position: absolute;
+    right: 170px;
+    top: 14px;
+    width: 0px;
+    display: none;
+    outline: none;
+    padding: 0 10px;
+}
+.serch-bar:focus{
+    outline: none;
+}
+.number{
+    background-color: aliceblue;
+    color: #000;
+    position: relative;
+    top: -15px;
+    padding: 2px;
+    text-align: center;
+    font-size: 0.6em;
+
+}
 .navbar-nav li a{
     color: #E53935 !important;
     transition: 0.5s all;
@@ -71,7 +120,7 @@ button:active, button:focus {
 .logging:hover{
     cursor: pointer;
 }
-
+.nav-form a:hover{text-decoration: none}
 .breadcrumb{
     background-color: transparent;
     padding: .75rem 0rem;
@@ -465,9 +514,13 @@ sup{
 /* frequently asked question */
 
 /* footer   section  */
-
+.footer div{
+    background-color: #263238; 
+    border-radius: 20px;
+}
 .footer div div{
     margin-bottom: 20px;
+    padding-top: 10px;
 }
 .promo:hover{
     cursor: pointer;

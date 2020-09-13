@@ -33,10 +33,10 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav m-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">products</a>
+            <a class="nav-link" href="product.html">products</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -56,14 +56,17 @@
         </ul>
         <form class="form-inline my-2 my-lg-0 nav-form">
             <i class="fas fa-search fa-lg main-color"></i>
-            <i class="fas fa-shopping-cart fa-lg main-color"></i>
-            <div class="logging"><i class="fas fa-user main-color fa-lg"></i><span class="main-color">Log In</span></div>
+            <a href="cart.html"><i class="fas fa-shopping-cart fa-lg main-color"><div class="number badge"> 9 </div>
+            </i></a>
+            <a class="logging" href="login.html"><i class="fas fa-user main-color fa-lg"></i></a>
         </form>
       </div>
-    </nav>   
+    </nav>
+    <input class="serch-bar" type="text" name="search" placeholder="Search..">
+
 <!--------------------  end nav bar section     -----------        -->
-        
-        
+<!--        scroll to top button       -->
+        <button class="top-btn"><i class="fas fa-arrow-circle-up fa-2x text-center"></i></button>
 <!--------------------  start the header  section     -----------        -->
         <div id="header_car" class="carousel slide" data-ride="carousel">
           <ol class="carousel-indicators">
@@ -128,7 +131,8 @@
 <!--         start   catagory section -->
         <section class="catagories">
             <div class="container">
-                <h2 class="text-center" style="margin-bottom: 20px">OUR <span class="main-color">PRODUCT</span></h2>
+                <h2 class="text-center"><span class="main-color under-line">Our Product</span></h2>
+                <h5 class="text-center main-color"  style="margin-bottom: 40px">We Simply Offer The Quality</h5>
                 <div class="row">
                     <div class="col-md-5 col-sm-12 men">
                         <h5>men</h5>                   
@@ -260,6 +264,7 @@
                         </div>
                     </div>
                 </div>
+                <button class="btn m-auto d-block">Show More Offers</button>
             </div>
         </section>
 <!--------------------  end special offer  section     -----------        -->
@@ -415,7 +420,7 @@
 <!--        section footer        -->
         
         <section class="footer">
-            <div class="container">
+            <div class="container" style="">
                 <div class="row">
                     <div class="col-lg-4 promo">
                         <h5><span class="main-color under-line">Promo</span></h5>
